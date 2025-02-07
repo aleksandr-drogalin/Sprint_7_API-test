@@ -1,12 +1,10 @@
-package Actions;
+package actions;
 
 import io.qameta.allure.Step;
 import io.restassured.response.Response;
-
 import static org.hamcrest.CoreMatchers.equalTo;
 
-public class Actions {
-
+public class GeneralActions {
 
     // вывести ответ на запрос в консоль
     public static void printResponseBody(Response response) {
@@ -22,5 +20,4 @@ public class Actions {
     public static void checkMessage(Response response, String expectedMessage) {
         response.then().assertThat().body("message",equalTo(expectedMessage));
     }
-
 }
