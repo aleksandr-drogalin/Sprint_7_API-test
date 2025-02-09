@@ -1,7 +1,6 @@
 package client;
 
 import actions.Courier;
-import actions.GeneralActions;
 import io.qameta.allure.Step;
 import io.restassured.response.Response;
 import model.CreateCourier;
@@ -12,19 +11,19 @@ import static io.restassured.RestAssured.given;
 
 public class ClientForTest {
 
-    private final String BASE_URI = "http://qa-scooter.praktikum-services.ru";
+    private static final String BASE_URI = "http://qa-scooter.praktikum-services.ru";
     // ручка создания учетной записи курьера
-    private final String END_URI_CREATE_COURIER = "/api/v1/courier";
+    private static final String END_URI_CREATE_COURIER = "/api/v1/courier";
     // ручка авторизации учетной записи курьера
-    private final String END_URI_AUTHORIZATION_COURIER = "/api/v1/courier/login";
+    private static final String END_URI_AUTHORIZATION_COURIER = "/api/v1/courier/login";
     // ручка удаления учетной записи курьера
-    private final String END_URI_DELETE_COURIER = "/api/v1/courier/";
+    private static final String END_URI_DELETE_COURIER = "/api/v1/courier/";
     // ручка создания заказа
-    private final String END_URI_CREATE_ORDER = "/api/v1/orders";
+    private static final String END_URI_CREATE_ORDER = "/api/v1/orders";
     // ручка получения списка заказов
-    private final String END_URI_GET_ORDER_LIST = "/api/v1/orders";
+    private static final String END_URI_GET_ORDER_LIST = "/api/v1/orders";
     // ручка отмены заказа
-    private final String END_URI_CANCEL_ORDER = "/api/v1/orders/cancel";
+    private static final String END_URI_CANCEL_ORDER = "/api/v1/orders/cancel";
 
 
     @Step("Отправка запроса на создание учетной записи курьера")
