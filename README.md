@@ -1,6 +1,6 @@
 <h1> Тестирование API учебного приложения "Яндекс.Самокат"</h1>
-<h4> Сайт тестируемого приложения https://qa-scooter.praktikum-services.ru/ </h4>
-<h4> Документация API https://qa-scooter.praktikum-services.ru/docs/ </h4>
+<h4> Сайт тестируемого приложения: https://qa-scooter.praktikum-services.ru/ </h4>
+<h4> Документация API: https://qa-scooter.praktikum-services.ru/docs/ </h4>
 <h4> Задание:</h4>
 Проверка позитивных и негативных сценариев отправки запросов в формате json на эндпоинты: <br>
 - создание аккаунта пользователя, <br>
